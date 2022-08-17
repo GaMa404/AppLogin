@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLogin.View.Login"
+             Title="Login"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <Frame BorderColor="White" BackgroundColor="Black" CornerRadius="20" Margin="0, 200, 0, 200">
+            <StackLayout>
+                <Label Text="Usuário:" TextColor="White" FontSize="30" HorizontalTextAlignment="Center" 
+                       Margin="0, 5, 0, 0"/>
+                <Entry x:Name="user" FontSize="24" BackgroundColor="Black" Opacity="0.8" 
+                       TextColor="White" PlaceholderColor="White"/>
+
+                <Label Text="_________________________________________________________" TextColor="White" />
+
+                <Label Text="Senha:" TextColor="White" FontSize="30" HorizontalTextAlignment="Center"
+                       Margin="0, 5, 0, 0"/>
+                <Entry x:Name="pass" FontSize="24" BackgroundColor="Black" Opacity="0.8" 
+                       TextColor="White" PlaceholderColor="White" IsPassword="True"/>
+
+                <Label Text="_________________________________________________________" TextColor="White" />
+                
+                <Button x:Name="btn_entrar" Text="Entrar" BorderColor="Black" BorderRadius="10" 
+                         FontSize="30" BackgroundColor="Black" TextColor="White" Margin="0, 5, 0, 0"/>
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
