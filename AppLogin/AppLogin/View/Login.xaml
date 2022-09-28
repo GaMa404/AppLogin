@@ -21,7 +21,7 @@
 
                 <Label Text="_________________________________________________________" TextColor="White" />
                 
-                <Button x:Name="btn_entrar" Text="Entrar" BorderColor="Black" BorderRadius="10" 
+                <Button x:Name="btn_entrar" Text="Entrar" Clicked="btn_entrar_Clicked" BorderColor="Black" BorderRadius="10" 
                          FontSize="30" BackgroundColor="Black" TextColor="White" Margin="0, 5, 0, 0"/>
             </StackLayout>
         </Frame>

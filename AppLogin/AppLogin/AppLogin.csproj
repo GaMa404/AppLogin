@@ -20,13 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Imagens\fundo.jpg" />
+    <Compile Remove="View\Protegida.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Imagens\fundo.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Remove="View\Protegida.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,10 +33,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="View\Login.xaml">
+    <EmbeddedResource Update="View\Logado.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Protegida.xaml">
+    <EmbeddedResource Update="View\Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
